@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+    <!-- Navbar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#button" class="nav-link">Button</a></li>
+                    <li class="nav-item"><a href="#card" class="nav-link">Card</a></li>
+                    <li class="nav-item"><a href="#form" class="nav-link">Form</a></li>
+                    <li class="nav-item"><a href="#list" class="nav-link">List</a></li>
+                    <li class="nav-item"><a href="#progressbar" class="nav-link">Progress Bar</a></li>
+                    <li class="nav-item"><a href="#pagination" class="nav-link">Pagination</a></li>
+                    <li class="nav-item"><a href="#table" class="nav-link">Table</a></li>
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Table</a></li>
+                            <li><a class="dropdown-item" href="#">Button</a></li>
+                            <li><a class="dropdown-item" href="#">List</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Another choice</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    
+
+    <!-- Buttons -->
+    <div class="container">
+        <div class="display" id="button">
+            <button class="button1">READ MORE</button>
+            <button class="button2">NEXT<i class="fa fa-share"></i></button>
+            <button class="button3"><i class="fa fa-mail-reply-all"></i>PREVIOUS</button>
+            <button class="button4"><span>MORE</span></button>
+            <button class="button5"><span>SUBMIT</span></button>
+            <button class="button6"><span>LOGIN</span></button>
+            <button class="button7"><span>Click here<i class="fa fa-check"></i></span></button>
+            <button class="button8"><span>HOVER</span></button>
+            <button class="button9">BUY NOW 🛒</button>
+            <button class="subscribe-button">SUBSCRIBE <span class="bell-icon"></span></button>
+        </div>
+    </div>
+    <!-- Card -->
+    <div class="container">
+        <div class="card" id="card">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="profile.png" alt="Product Name">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Product Name</h3>
+                    <div class="product-price">$49.99</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+        <div class="form mt-3" id="form">
+            <h2>Form</h2>
+          </div>
+        <form>
+            <div class="form-group mb-3">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group mb-3">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="comment">Comments:</label>
+                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+              </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- List Group -->
+    <div class="container">
+        <div class="list mt-3" id="list">
+            <h2>List Group</h2>
+          </div>
+            
+          <div class="container mt-3">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">First item</li>
+              <li class="list-group-item">Second item</li>
+              <li class="list-group-item">Third item</li>
+            </ol>
+          </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="container">
+        <div class="Progress Bar mt-3" id="progressbar">
+            <h2>Progress Bar</h2>
+          </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="container">
+        <div class="Pagination mt-3" id="Pagination">
+            <h2>Pagination</h2>
+          </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-custom">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Table -->
+    <div class="container">
+        <div class="table mt-3" id="table">
+            <h2>Table</h2>
+          </div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>G</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>I</td>
+                    <td>J</td>
+                    <td>K</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,536 @@
+.container {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* style.css */
+
+.navbar {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.125rem; /* 18px */
+    font-weight: bold;
+    color: rgb(54, 127, 230);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: rgb(191, 136, 98);
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    justify-content: left;
+    background-color: #ffffff;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 767.98px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+        padding: 10px 0;
+    }
+
+    .navbar-toggler {
+        border: none;
+        padding: 0;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox%3D%220 0 30 30%22 xmlns%3D%22http://www.w3.org/2000/svg%22%3E%3Cpath stroke%3D%22rgba%280%2C 0%2C 0%2C 0.5%29%22 stroke-width%3D%222%22 stroke-linecap%3D%22round%22 stroke-miterlimit%3D%2210%22 d%3D%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
+    }
+}
+
+
+.display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.button1{
+    margin: 20px;
+    padding: 20px;
+    border-color: aqua;
+    background-color: aqua;
+    cursor: crosshair;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+}
+.button1:hover{
+    color: aliceblue;
+}
+.button2{
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    cursor: crosshair;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 10px;
+   
+}
+.button2 i {
+    margin-right: 4px; /* Space between icon and text */
+    padding: 4px;
+}
+.button2:hover{
+    color: rgb(23, 116, 197);
+    box-shadow: 10px 10px grey;
+}
+.button3{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(149, 149, 238);
+    cursor: crosshair;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+
+}
+.button3:hover{
+    color: rgb(23, 186, 197);
+    box-shadow: 0 0 20px #6fc5ff50;
+    background-color: white;
+    transform: scale(1.1);
+}
+.button4{
+    outline: none;
+    cursor: cell;
+    border: none;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgb(112, 112, 226);
+    color: ghostwhite;
+}
+
+.button4 span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+.button4:hover span {
+    color: black;
+}
+
+.button4::before,
+.button4::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.button4::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button4:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+
+/* Button 1: Hover color transition from right to left */
+.button5 {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    color: ghostwhite;
+    transition: color 0.4s;
+    background: rgb(112, 112, 226);
+}
+
+.button5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 0;
+    transition: left 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button5:hover::before {
+    left: 0;
+}
+
+.button5 span {
+    position: relative;
+    z-index: 10;
+}
+
+.button5:hover span {
+    color: black;
+}
+
+/* Button 2: Hover color transition from middle to both sides */
+.button6 {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 80px;
+    overflow: hidden;
+    color: ghostwhite;
+    transition: color 0.4s;
+    background: rgb(226, 112, 112);
+}
+
+.button6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: 0;
+    transition: width 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button6:hover::before {
+    width: 200%;
+    left: -50%;
+}
+
+.button6 span {
+    position: relative;
+    z-index: 10;
+}
+
+.button6:hover span {
+    color: black;
+}
+
+/* Button 3: Hover underline from left to right */
+.button7 {
+    outline: none;
+    cursor: row-resize;
+    border: none;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 7px;
+    overflow: hidden;
+    color: ghostwhite;
+    transition: color 0.4s;
+    background: rgb(112, 226, 112);
+    padding-bottom: 10px;
+}
+
+.button7::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: black;
+    z-index: 10;
+    transition: width 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button7:hover::after {
+    width: 100%;
+}
+
+.button7 span {
+    position: relative;
+    z-index: 10;
+}
+/* button */
+.button8 {
+    margin: 20px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+  }
+  .button8::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(80, 87, 86);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  /* glow */
+  .button8::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #FF0000, #FF7300, #FFFB00, #48FF00,
+      #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+  /* hover */
+  .button8:hover::before {
+    opacity: 1;
+  }
+  
+  .button8:active:after {
+    background: transparent;
+  }
+  
+  .button8:active {
+    color: white;
+    font-weight: bold;
+  }
+  .button9 {
+    margin: 20px;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button9:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+  .subscribe-button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 5px;
+  }
+  
+  .subscribe-button:hover {
+    background-color: darkred;
+  }
+  
+  .bell-icon {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .bell-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .bell-icon::after {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+  } 
+
+
+.card {
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 32px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), #604b4a30 0px 70px 30px -50px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), #604b4a50 0px 70px 30px -50px;
+}
+
+.product-card {
+    width: 100%;
+    height: 100%;
+}
+
+.product-image img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.product-info {
+    padding: 10px 0;
+}
+
+.product-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.add-to-cart-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #218838;
+}
+
+
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+}
+.progress-bar-custom {
+    background-color: #007bff;
+}
+.pagination-custom .page-link {
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+.pagination-custom .page-link:hover {
+    background-color: #007bff;
+    color: white;
+}
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Custom styles for dropdowns */
+.dropdown-menu {
+    min-width: 200px; /* Set a minimum width for the dropdown */
+}
+
+.dropdown-item:hover {
+    background-color: rgb(215, 215, 241); /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+.dropdown-divider {
+    margin: 0.5rem 0; /* Adjust the margin around the divider */
+}
